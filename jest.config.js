@@ -1,6 +1,6 @@
 module.exports = {
   moduleNameMapper: {
-    '\\.(css|sass|svg|png)$': '<rootDir>/__mocks__/styleMock.js',
+    '\\.(css|sass|svg|png|jpg)$': '<rootDir>/__mocks__/styleMock.js',
   },
   setupFiles: ['./jest.setup.js'],
   transform: {
