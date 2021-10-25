@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: { app: './src/index.js' },
   devtool: 'inline-source-map',
   output: {
@@ -59,8 +59,13 @@ module.exports = {
           'css-loader'
         ],
       },
+      // SVG loader
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
           'file-loader',
         ],
