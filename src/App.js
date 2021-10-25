@@ -1,17 +1,17 @@
 import React from 'react';
-import Main from './components/main';
-// import ConnectedComponent from './components/connected_component';
+import Header from './components/header';
+import HomeGallery from './components/homegallery';
+import { Footer } from './components/footer';
 import './app.css';
 
-class App extends React.PureComponent {
-  render() {
-    return (
-      <div>
-        <Main />
-        {/* <ConnectedComponent /> */}
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <React.Fragment>
+      <Header />
+      <HomeGallery />
+      <Footer />
+    </React.Fragment>
+  );
+};
 
 export default App;

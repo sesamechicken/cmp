@@ -1,10 +1,11 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: { app: './src/index.js' },
   devtool: 'inline-source-map',
   output: {
@@ -29,6 +30,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template.html'
     }),
+    new webpack.DefinePlugin({
+      'process.env.TOKEN': JSON.stringify(process.env.TOKEN),
+    })
   ],
   module: {
     rules: [
@@ -59,12 +63,17 @@ module.exports = {
           'css-loader'
         ],
       },
+      // SVG loader
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
           'file-loader',
         ],
-      },
+      },   
     ]
   }
 };

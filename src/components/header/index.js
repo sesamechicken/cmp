@@ -2,7 +2,7 @@ import React from 'react';
 import './main.css';
 import logo from './logo.jpg';
 
-const main = () => {
+const Header = () => {
   return (
     <header>
       <img className="logo" src={logo} alt="CALEB PARKS PHOTOGRAPHY" />
@@ -10,4 +10,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Header;
