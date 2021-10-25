@@ -30,6 +30,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template.html'
     }),
+    new webpack.DefinePlugin({
+      'process.env.TOKEN': JSON.stringify(process.env.TOKEN),
+    })
   ],
   module: {
     rules: [
@@ -70,10 +73,7 @@ module.exports = {
         use: [
           'file-loader',
         ],
-      },
-      new webpack.DefinePlugin({
-        'process.env.TOKEN': JSON.stringify(process.env.TOKEN),
-      })
+      },   
     ]
   }
 };
