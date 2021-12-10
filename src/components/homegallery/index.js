@@ -23,10 +23,6 @@ const HomeGallery = () => {
 
   return (
     <>
-      <p>
-        data length is:
-        {data.length}
-      </p>
       <div className="gallery-wrapper">
         {data.length && (
           <Masonry className="gallery-wrapper" columns={3} spacing={1}>
