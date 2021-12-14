@@ -3,9 +3,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: { app: './src/index.js' },
   devtool: 'inline-source-map',
   output: {
@@ -32,6 +33,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.TOKEN': JSON.stringify(process.env.TOKEN),
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: '_redirects', to: '.' }
+      ],
     })
   ],
   module: {
