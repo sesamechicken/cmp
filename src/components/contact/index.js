@@ -34,7 +34,7 @@ class Contact extends React.Component {
             <TextField multiline id="message" label="Your message" type="email" onKeyUp={(e) => this.onChange(e, 'message')} />
           </Grid>
           <Grid item xs={12} md={12} style={{ textAlign: 'center' }}>
-            <Button>Clicky</Button>
+            <Button>Send</Button>
           </Grid>
         </Grid>
       </div>
