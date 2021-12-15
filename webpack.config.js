@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: { app: './src/index.js' },
   devtool: 'inline-source-map',
   output: {
@@ -36,8 +36,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: '_redirects', to: '.' },
-        { from: 'Parks_Caleb_Resume.pdf', to: '.' }
+        { from: '_redirects', to: '.' }
       ],
     })
   ],
