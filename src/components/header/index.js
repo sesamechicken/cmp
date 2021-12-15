@@ -10,7 +10,9 @@ const Header = () => {
         <img className="logo" src={logo} alt="CALEB PARKS PHOTOGRAPHY" />
       </Link>
       <nav>
-        GALLERY | ABOUT | CONTACT
+        <Link className="nav-link" to="/">GALLERY</Link>
+        <Link className="nav-link" to="/about">ABOUT</Link>
+        <Link className="nav-link" to="/contact">CONTACT</Link>
       </nav>
     </header>
   );

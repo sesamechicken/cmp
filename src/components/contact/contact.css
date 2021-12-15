@@ -1,0 +1,35 @@
+input[type=text]{
+  padding: 1em;
+  background-color: #c9c9c9;
+  color: #333;
+}
+
+input[type=email]{
+  padding: 1em;
+  background-color: #c9c9c9;
+  color: #333;
+}
+textarea{
+  padding: 1em !important;
+  background-color: #c9c9c9 !important;
+  color: #333 !important;
+}
+button {
+  background: #ed0062 !important;
+  color: #ffffff !important;
+}
+
+.contact-view{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+.view-row{
+  flex:1 1 0%!important;
+  align-items: center;
+  display: inline;
+}
+
+label {
+  color: #ab0045 !important;
+}
