@@ -24,13 +24,13 @@ class Contact extends React.Component {
     return (
       <div className="contact-view">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} style={{ textAlign: 'center' }}>
             <TextField id="name" label="Your name" variant="outlined" onKeyUp={(e) => this.onChange(e, 'name')} />
           </Grid>
-          <Grid item xs={12} md={6} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} style={{ textAlign: 'center' }}>
             <TextField id="email" label="Your email" type="email" onKeyUp={(e) => this.onChange(e, 'email')} />
           </Grid>
-          <Grid item xs={12} md={8} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} style={{ textAlign: 'center' }}>
             <TextField multiline id="message" label="Your message" type="email" onKeyUp={(e) => this.onChange(e, 'message')} />
           </Grid>
           <Grid item xs={12} md={12} style={{ textAlign: 'center' }}>
