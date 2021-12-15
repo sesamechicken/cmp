@@ -7,7 +7,6 @@ import MasonryItem from '@mui/lab/MasonryItem';
 import { LightBox } from 'react-lightbox-pack';
 import 'react-lightbox-pack/dist/index.css';
 import { TOKEN } from '../../utils';
-
 import './homegallery.css';
 
 const HomeGallery = () => {

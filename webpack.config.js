@@ -36,7 +36,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: '_redirects', to: '.' }
+        { from: '_redirects', to: '.' },
+        { from: 'Parks_Caleb_Resume.pdf', to: '.' }
       ],
     })
   ],
