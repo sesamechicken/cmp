@@ -9,7 +9,7 @@ const About = () => {
     <div className="about-container">
       <Grid container>
         <Grid item xs={12} md={12}>
-          <img alt="headshot" src={headshot} align="left" style={{marginTop: '1em', marginBottom: '2em', maxWidth: '100%' }} />
+          <img alt="headshot" src={headshot} align="left" style={{ marginTop: '1em', marginBottom: '2em', maxWidth: '100%' }} />
           <p>
             My name is Caleb Parks, I’m a junior at Columbia College Chicago. I’m in the fashion photography
             program and hope to one day get a job for a publication as a lead photographer or creative director.
@@ -18,7 +18,7 @@ const About = () => {
             People that I’ve worked with professionally include Photographer Verser Engelhard, Photographer Peter Maloy, The Modern Society advertising agency, COMPLEX Strategist Christian Anderson-Blakely.
           </p>
           <p>
-            <a href="./Caleb_Parks_Resume.pdf" target="_blank" className="resume-link">View resume</a>
+            <a href="https://www.dropbox.com/s/5d4pjql452ihs2h/Parks_Caleb_Resume.pdf?dl=1" rel="noreferrer" target="_blank" className="resume-link">View resume</a>
           </p>
         </Grid>
       </Grid>
