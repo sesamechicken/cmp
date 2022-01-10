@@ -10,7 +10,7 @@ if (module.hot) {
   module.hot.accept();
 }
 
-ReactGA.initialize('G-PHRF47XCL7');
+ReactGA.initialize('UA-215537449-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
